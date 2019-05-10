@@ -1,0 +1,840 @@
+/**
+============================================================================
+Index Of Content
+============================================================================
+ 01. color variable
+ 02.default style
+===================================================================================
+===============================  FRONT PAGE STYLE START  ==========================
+===================================================================================
+00. Mobile view
+01. header section
+02. hero section (slider)
+03. upcoming event section (countdown)
+04. history of islam section
+05. prayer time section
+06. events section
+07. donation section
+08. blog section
+09. footer section
+10. back to top button section
+ */
+/*
+=============================================================================
+>>>> color variable <<<<
+==============================================================================
+*/
+:root {
+    --theme-color: rgb(218,165,32);
+}
+:root {
+    --secondary-color: #FF2F2A;
+}
+/*
+=============================================================================
+ 1. DEFAULT STYLE START
+==============================================================================
+*/
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    background-image: url('../images/body-bg.png');
+}
+a:hover{
+    text-decoration: none;
+}
+a:focus{
+    outline: none;
+}
+.section-padding {
+    padding: 80px 0;
+}
+/**
+================================================================================
+  1. DEFAULT STYLE END
+================================================================================
+*/
+
+/**
+===================================================================================
+===============================  FRONT PAGE STYLE START  ==========================
+===================================================================================
+ */
+/*mobile view*/
+.sticky-area-mobile-view {
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    background: var(--theme-color);
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 0 10px #333;
+}
+.mobile-menu-btn i.fa {
+    font-size: 27px;
+}
+.mobile-menu-btn {
+    width: 33%;
+    float: left;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 15px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.mobile-logo {
+    width: 33%;
+    float: left;
+    text-align: center;
+    display: block;
+    padding: 5px;
+}
+.mobile-home-btn i.fa {
+    color: #fff;
+    font-size: 33px;
+    margin: 8px;
+}
+.mobile-home-btn {
+    width: 33%;
+    float: left;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+.sticky-area-mobile-view{
+    display: none;
+}
+ul.mobile-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: var(--theme-color);
+    position: fixed;
+    bottom: -100%;
+    z-index: 9999;
+    width: 100%;
+    opacity: 0;
+    overflow: auto;
+    height: 200px;
+    transition: all .5s;
+}
+ul.mobile-menu li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #F5F5F6;
+    text-decoration: none;
+    transition: all .5s;
+}
+ul.mobile-menu li a:focus {
+    outline: none;
+}
+ul.mobile-menu li a:hover {
+    color: #000;
+    transition: all .5s;
+}
+#close {
+    position: absolute;
+    right: 9px;
+    top: 3px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    padding: 2px;
+}
+/**
+================================================================================
+ 1. header section start
+================================================================================
+*/
+.header-section {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+.logo {
+    padding-top: 10px;
+}
+.logo a h1 {
+    color: #fff;
+    text-transform: capitalize;
+    transition: all .5s;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding-top: 25px;
+}
+.logo a h1:hover {
+    color: var(--theme-color);
+    transition: all .5s;
+}
+ul#nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+    padding-top: 40px !important;
+    border-bottom: 1px solid var(--theme-color);
+}
+ul#nav li {
+    display: inline-block;
+}
+ul#nav li a {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    text-transform: uppercase;
+    transition: all .5s;
+    font-weight: 600;
+}
+ul#nav li{
+    position: relative;
+    transition: all .5s;
+}
+ul#nav li.active:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-top: 3px solid var(--theme-color);
+    transition: all .5s;
+}
+ul#nav li:hover:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-top: 3px solid var(--theme-color);
+    transition: all .5s;
+}
+/**
+================================================================================
+ 1. header section end
+================================================================================
+*/
+/**
+================================================================================
+ 2. hero section start
+================================================================================
+*/
+.single-slide-item {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+.item-1 {
+    background-image: url("../images/slider-1.jpg");
+}
+.item-2 {
+    background-image: url("../images/slider-2.jpg");
+}
+.item-3 {
+    background-image: url("../images/slider-3.jpg");
+}
+#hero-slider .owl-prev {
+    position: absolute;
+    left: 0;
+    top: 45%;
+}
+#hero-slider .owl-prev:focus {
+    outline: none;
+}
+#hero-slider .owl-prev span {
+    font-size: 35px;
+    display: block;
+    border: 2px solid var(--theme-color);
+    width: 35px;
+    color: #fff;
+    height: 35px;
+    transition: all .5s;
+}
+#hero-slider .owl-prev span:hover{
+    background: var(--theme-color);
+    transition: all .5s;
+}
+#hero-slider .owl-next {
+    position: absolute;
+    right: 0;
+    top: 45%;
+}
+#hero-slider .owl-next:focus {
+    outline: none;
+}
+#hero-slider .owl-next span {
+    font-size: 35px;
+    display: block;
+    border: 2px solid var(--theme-color);
+    width: 35px;
+    color: #fff;
+    height: 35px;
+    transition: all .5s;
+}
+#hero-slider .owl-next span:hover{
+    background: var(--theme-color);
+    transition: all .5s;
+}
+.single-slide-item {
+    position: relative;
+}
+.bg-overly {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    opacity: 0.8;
+}
+.item-content {
+    display: table;
+    width: 100%;
+    height: 100vh;
+}
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.item-content h1 {
+    color: #fff;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+.item-content h2 {
+    color: var(--theme-color);
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.item-content p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 35px 150px;
+    margin: 0;
+    line-height: 36px;
+}
+.salat-btn.slider-btn a{
+    border: 2px solid var(--theme-color);
+}
+.salat-btn {
+    display: inline-block;
+}
+.salat-btn a {
+    position: relative;
+    color: var(--white);
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    border: 2px solid var(--white);
+    padding: 10px 30px;
+    z-index: 1;
+}
+.salat-btn a:after {
+    position: absolute;
+    content: "";
+    background: var(--theme-color);
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: all .5s;
+}
+.salat-btn a:hover:after{
+    visibility: visible;
+    transition: all .5s;
+    width: 100%;
+}
+/**
+================================================================================
+ 2. hero section end
+================================================================================
+*/
+/**
+================================================================================
+ 3. upcoming event section start
+================================================================================
+*/
+.upcoming-events{
+    background: var(--theme-color);
+    padding: 10px 0;
+}
+.counter-heading h2 {
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+.counter-heading h2 span {
+    color: var(--secondary-color);
+}
+.counter-heading a p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 0;
+    transition: all .5s;
+}
+.counter-heading a p:hover {
+    color: var(--secondary-color);
+    transition: all .5s;
+}
+.counter-heading h2:hover i.fa {
+    padding-left: 20px;
+    transition: all .5s;
+}
+.counter-heading h2 i.fa {
+    padding-left: 0;
+    transition: all .5s;
+}
+.single-count{
+    background-image: url("../images/countdown-bg.png");
+    box-shadow: 0 0 10px #000;
+}
+.single-count h2 {
+    margin-bottom: 0;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #fff;
+    font-size: 20px;
+}
+.single-count h2 span {
+    font-size: 70px;
+}
+/**
+================================================================================
+ 3. upcoming event section end
+================================================================================
+*/
+/**
+================================================================================
+ 4. history of islam section start
+================================================================================
+*/
+.history-thumb {
+    overflow: hidden;
+    border: 15px solid var(--theme-color);
+    box-shadow: 0 0 15px #000;
+}
+.history-thumb:hover img {
+    transform: scale(1.2);
+    transition: all .5s;
+}
+.history-thumb img {
+    width: 100%;
+    height: 370px;
+    transition: all .5s;
+}
+.history-content-area {
+    background: var(--theme-color);
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 0 15px #000;
+    width: 100%;
+    height: 400px;
+}
+.section-title h2 {
+    position: relative;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 0 0 5px #333;
+    font-size: 40px;
+}
+.section-title p {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.section-title h2 span{
+    color: var(--secondary-color);
+}
+.salat-btn.history a:after{
+    background: #333;
+}
+/**
+================================================================================
+ 4. history of islam section end
+================================================================================
+*/
+/**
+================================================================================
+ 5. prayer time section start
+================================================================================
+*/
+.prayer-time-section{
+    background: var(--theme-color);
+    box-shadow: 0 0 15px #000;
+}
+.prayer-time-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.prayer-time-list ul li {
+    float: left;
+    width: 15%;
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0 0 15px #444;
+    border-top-left-radius: 40px;
+}
+.prayer-time-list {
+    padding-top: 30px;
+}
+.single-prayer-time {
+    transition: all .5s;
+}
+.single-prayer-time:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+    transition: all .5s;
+}
+.single-prayer-time h3 {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 600;
+    font-size: 20px;
+}
+.single-prayer-time p {
+    padding: 0;
+    margin: 0;
+    color: #333;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.single-prayer-time span {
+    text-transform: uppercase;
+}
+/**
+================================================================================
+ 5. prayer time section end
+================================================================================
+*/
+/**
+================================================================================
+ 6. events section start
+================================================================================
+*/
+.event-thumb img, .post-thumb img {
+    width: 100%;
+    transform: scale(1.0);
+    transition: all .5s;
+}
+.single-event, .single-post {
+    background: #fff;
+    border: 1px solid var(--theme-color);
+    padding: 15px;
+    box-shadow: 0 0 10px #000;
+    margin: 20px 0;
+    display: block;
+}
+.all-events, .all-blog {
+    padding-top: 30px;
+}
+.event-content span, .post-content span {
+    text-align: center;
+    display: block;
+    text-transform: capitalize;
+    border-top: 1px dashed var(--theme-color);
+    padding-top: 9px;
+}
+.event-content h4, .post-content h4 {
+    color: var(--theme-color);
+    padding-top: 15px;
+    font-size: 22px;
+}
+.event-content p, .post-content p {
+    color: #333;
+    line-height: 30px;
+}
+.event-thumb, .post-thumb {
+    overflow: hidden;
+    border: 3px solid var(--theme-color);
+}
+.single-event:hover .event-thumb img {
+    transform: scale(1.2);
+    transition: all .5s;
+}
+
+.islamic-event .owl-nav, .blog-slider .owl-nav {
+    float: right;
+    font-size: 35px;
+}
+.islamic-event .owl-prev:focus, .blog-slider .owl-prev:focus{
+    outline: none;
+}
+.islamic-event .owl-prev span, .blog-slider .owl-prev span {
+    width: 30px;
+    height: 30px;
+    background: var(--secondary-color);
+    display: block;
+    color: #fff;
+    margin: 5px;
+    box-shadow: 0 0 10px #333;
+}
+.islamic-event .owl-next:focus, .blog-slider .owl-next:focus{
+    outline: none;
+}
+.islamic-event .owl-next span, .blog-slider .owl-next span {
+    width: 30px;
+    height: 30px;
+    background: #333;
+    display: block;
+    color: #fff;
+    margin: 5px;
+    box-shadow: 0 0 10px #333;
+}
+/**
+================================================================================
+ 6. events section end
+================================================================================
+*/
+/**
+================================================================================
+ 7. donation section start
+================================================================================
+*/
+.donation-section{
+    background: var(--theme-color);
+    box-shadow: 0 0 10px #333;
+}
+.donation-content h2 {
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.donation-content p {
+    padding: 30px 0;
+}
+/**
+================================================================================
+ 7. donation section end
+================================================================================
+*/
+/**
+================================================================================
+ 8. blog section start
+================================================================================
+*/
+.blog-footer p {
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 0;
+    border-top: 1px dashed var(--theme-color);
+    padding-top: 10px;
+}
+.blog-footer i.fa {
+    float: right;
+    color: var(--theme-color);
+    font-weight: 600;
+    padding: 6px 3px;
+}
+.post-content p a {
+    color: var(--theme-color);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.single-post:hover .post-thumb img {
+    transform: scale(1.2);
+    transition: all .5s;
+}
+/**
+================================================================================
+ 8. blog section end
+================================================================================
+*/
+/**
+================================================================================
+ 9. footer section start
+================================================================================
+*/
+.footer-section {
+    background-image: url('../images/footer-bg.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.footer-bg-overly {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme-color);
+    opacity: .8;
+}
+.widget-box-shadow {
+    box-shadow: 0 -10px 10px #333;
+    padding: 20px;
+}
+/*footer top*/
+.short-desc p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+}
+.contact-info p i.fa {
+    padding-right: 15px;
+    font-size: 16px;
+}
+.contact-info p {
+    color: #ffffff;
+    font-size: 14px;
+}
+.footer-common-title h5 {
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    margin-bottom: 26px;
+}
+.footer-common-title h5:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    border-bottom: 2px solid #fff;
+}
+.link-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.link-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+}
+.link-menu ul li a i.fa {
+    padding-right: 10px;
+}
+.latest-item {
+    overflow: hidden;
+}
+.latest-thumbnail {
+    width: 26%;
+    float: left;
+    display: block;
+    margin-right: 10px;
+}
+.latest-widget-content h4 {
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.latest-widget-content p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer-common-title p {
+    color: #ffffff;
+    font-size: 14px;
+}
+.latest-thumbnail img {
+    border: 2px solid var(--theme-color);
+    border-radius: 5px;
+    width: 100%;
+}
+.popular-item-thumb img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 14px;
+}
+/*footer bottom*/
+.footer-bottom-border-top {
+    border-top: 1px solid #ddd;
+}
+.footer-social-links i.fa {
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    line-height: 24px;
+    border-radius: 3px;
+    margin: 3px;
+    transition: all 1s;
+}
+.copy-right-text p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    line-height: 44px;
+    text-transform: capitalize;
+}
+.footer-social-links {
+    padding-top: 20px;
+}
+.copy-right-text p span a {
+    color: #333;
+}
+.footer-social-links i.fa:hover {
+    background: var(--secondary-color);
+    transition: all 1s;
+}
+/**
+================================================================================
+ 9. footer section end
+================================================================================
+*/
+
+/**
+================================================================================
+ 10. back to top area start
+ ================================================================================
+*/
+.back_to_top i.fa {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 25px;
+    color: #fff;
+    background: var(--theme-color);
+    padding: 15px 17px;
+    border-radius: 50%;
+    z-index: 9999;
+    display: none;
+    transition-duration: 1s;
+    box-shadow: 0 0 10px #999;
+    transition-timing-function: ease-out;
+}
+
+i.fa.fa-arrow-up:hover {
+    background: var(--secondary-color);
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+/**
+================================================================================
+ 10. back to top area end
+ ================================================================================
+*/

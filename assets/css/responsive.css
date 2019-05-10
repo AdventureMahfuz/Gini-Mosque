@@ -1,0 +1,218 @@
+/*Medium Layout: 1280*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .history-content-area {
+        height: 380px;
+    }
+    .history-thumb img {
+        height: 350px;
+    }
+    ul#nav li a {
+        font-size: 12px;
+    }
+    .item-content h2 {
+        font-size: 40px;
+    }
+    .item-content p {
+        font-size: 18px;
+        padding: 25px 150px;
+    }
+    .counter-heading h2 {
+        font-size: 25px;
+    }
+    .counter-heading a p {
+        font-size: 16px;
+    }
+    .section-title h2 {
+        font-size: 35px;
+    }
+    .single-prayer-time h3 {
+        font-size: 16px;
+    }
+    .single-prayer-time p {
+        font-size: 13px;
+    }
+    .blog-footer p {
+        font-size: 13px;
+    }
+    .blog-footer i.fa {
+        padding: 9px 3px;
+    }
+    .copy-right-text p {
+        font-size: 16px;
+    }
+}
+
+/*Tablet Layout: 768px*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    ul#nav li a {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .logo a h1 {
+        font-size: 29px;
+    }
+    .item-content h2 {
+        font-size: 35px;
+    }
+    .item-content p {
+        padding: 20px 0;
+        font-size: 18px;
+    }
+    .item-content h1 {
+        padding-bottom: 30px;
+        font-size: 30px;
+    }
+    .salat-btn a {
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+    .counter-heading h2 {
+        font-size: 20px;
+    }
+    .counter-heading a p {
+        font-size: 12px;
+    }
+    span.event-date {
+        font-size: 12px;
+    }
+    body {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .section-title h2 {
+        font-size: 25px;
+    }
+    .history-content-area {
+        height: auto;
+    }
+    .donation-content h2 {
+        font-size: 25px;
+    }
+    .donation-content p {
+        padding: 15px 0;
+    }
+    .section-padding {
+        padding: 50px 0;
+    }
+    .copy-right-text p {
+        font-size: 16px;
+    }
+    .popular-item-thumb img {
+        width: 68px;
+        height: 68px;
+    }
+}
+
+/*Mobile Layout: 320px*/
+@media only screen and (max-width: 767px) {
+    .sticky-area-mobile-view{
+        display: block;
+    }
+    .footer-bottom {
+        padding-bottom: 40px;
+    }
+    .header-section {
+        display: none;
+    }
+    .item-content p {
+        padding: 20px 0;
+        font-size: 16px;
+    }
+    .mobile-logo a img {
+        width: 60%;
+    }
+    body {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .item-content h2 {
+        font-size: 25px;
+    }
+    .item-content h1 {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    #hero-slider .owl-prev {
+        top: 95%;
+    }
+    #hero-slider .owl-next {
+        top: 95%;
+    }
+    .countdown {
+        padding-top: 25px;
+    }
+    .single-count h2 {
+        font-size: 16px;
+    }
+    .single-count h2 span {
+        font-size: 50px;
+    }
+    .history-thumb img {
+        height: auto;
+    }
+    .history-thumb {
+        margin-bottom: 30px;
+    }
+    .section-title h2 {
+        font-size: 30px;
+    }
+    .history-content-area {
+        height: auto;
+    }
+    .prayer-time-list ul li {
+        width: 46%;
+    }
+    .popular-item-thumb img {
+        width: 80px;
+        height: 80px;
+    }
+    .copy-right-text p {
+        font-size: 16px;
+    }
+    .back_to_top_section {
+        display: none;
+    }
+    .donation-content h2 {
+        font-size: 25px;
+    }
+    .donation-content p {
+        padding: 15px 0;
+    }
+}
+
+/*Wide Mobile Layout: 480px*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .mobile-logo a img {
+        width: 35%;
+    }
+    #hero-slider .owl-prev {
+        top: 90%;
+    }
+    #hero-slider .owl-next {
+        top: 90%;
+    }
+    .blog-footer p {
+        font-size: 12px;
+    }
+    .blog-footer i.fa {
+        padding: 10px 2px;
+    }
+    .event-content h4 {
+        font-size: 15px;
+    }
+    .event-content p {
+        line-height: 25px;
+    }
+    .popular-item-thumb img {
+        width: 65px;
+        height: 65px;
+    }
+    .latest-thumbnail img {
+        width: 80%;
+    }
+}
